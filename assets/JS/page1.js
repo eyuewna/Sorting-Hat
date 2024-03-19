@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     videoContainer.classList.add('video-container');
     // Create the video element
     var video = document.createElement('video');
-    // Update the video source with the correct path
-    video.src = 'assets/video/entrance.mp4'; // Adjusted path
+    video.src = 'assets/video/entrance.mp4';
     video.autoplay = true;
     video.loop = false;
     // Add event listener for timeupdate event
@@ -34,5 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Append the container to the body
     document.body.appendChild(videoContainer);
   });
-
-
+});
