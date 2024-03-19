@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     videoContainer.classList.add('video-container');
     // Create the video element
     var video = document.createElement('video');
-    video.src = 'video/entrance.mp4';
+    // Update the video source with the correct path
+    video.src = 'assets/video/entrance.mp4'; // Adjusted path
     video.autoplay = true;
     video.loop = false;
     // Add event listener for timeupdate event
@@ -33,4 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Append the container to the body
     document.body.appendChild(videoContainer);
   });
+
+  // Function to create the dynamic anchor element
+  var link = document.createElement('a');
+  link.href = 'page2.html';
+  document.body.appendChild(link);
 });
