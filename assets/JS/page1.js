@@ -35,9 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(videoContainer);
   });
 
-  // Function to create the dynamic anchor element
-  var link = document.createElement('a');
-  link.href = 'page2.html';
-  link.textContent = 'Link to Page 2';
-  document.body.appendChild(link);
-});
+
