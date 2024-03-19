@@ -1,4 +1,4 @@
-var sound = new Audio('sounds/music.mp3'); 
+var sound = new Audio('../sounds/music.mp3'); 
 
 // Define houses with their respective colors
 var houses = {
@@ -12,8 +12,8 @@ var randomhouse = Math.floor(Math.random() * Object.keys(houses).length);
 var houseName = Object.keys(houses)[randomhouse];
 var houseColor = houses[houseName];
 
-var audio = new Audio('sounds/' + houseName + 'before.mp3');
-var audioafter = new Audio('sounds/' + houseName + 'after.mp3');
+var audio = new Audio('../assets/sounds/' + houseName + 'before.mp3');
+var audioafter = new Audio('../assets/sounds/' + houseName + 'after.mp3');
 
 document.querySelector(".house a").addEventListener("click", housetext);
 
@@ -39,7 +39,7 @@ function housetext() {
 
   audioafter.onended = function() {
     setTimeout(function() {
-      document.querySelector(".page2").style.backgroundImage = "url('images/" + houseName + ".jpg')";
+      document.querySelector(".page2").style.backgroundImage = "url('../assets/images/" + houseName + ".jpg')";
       document.getElementById("eighth").remove();
       document.querySelector("#over").classList.remove("overlay");
       document.querySelector("#cont").classList.remove("container");
@@ -56,5 +56,5 @@ function housetext() {
 }
 
 document.getElementById('exitButton').addEventListener('click', function() {
-  window.location.href = 'page1.html';
+  window.location.href = '../page1.html';
 });
