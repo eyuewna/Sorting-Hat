@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MyCustomFont";
-    src: url("../assets/fonts/AnimalesFantastic-lGly.ttf");
+    src: url("../fonts/AnimalesFantastic-lGly.ttf");
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     transition: background 1s ease-in-out;
-        cursor: url("../assets/images/cursor1.png"), auto;
+        cursor: url("../images/cursor1.png"), auto;
 
 }
 
