@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Sorting Hat</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/haticon.png"/>
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="pg2" class="page2" class="buttonBox">
+        <div id="eighth" class="buttonBox">
+            <button class="house"><a>START</a></button>
+            <button id="exitButton">&#8592;</button>
+
+        </div>
+        <div id="cont" class="container">
+            <div class="text">
+                <h1>Your House is:</h1>
+                <h1 class="housename"></h1>
+                <!-- Add house logos below -->
+                <div class="house-logos">
+                    <img id="Hufflepuff-logo" src="images/hufflepuff-logo.png" alt="Hufflepuff Logo" class="house-logo">
+                    <img id="Gryffindor-logo" src="images/gryffindor-logo.png" alt="Gryffindor Logo" class="house-logo">
+                    <img id="Slytherin-logo" src="images/slytherin-logo.png" alt="Slytherin Logo" class="house-logo">
+                    <img id="Ravenclaw-logo" src="images/ravenclaw-logo.png" alt="Ravenclaw Logo" class="house-logo">
+                </div>
+                <!-- End of house logos -->
+                <h2 class="startagain" onClick="window.location.reload();">Start Again</h2>
+                <h2><a href="index.html">Home</a></h2>
+            </div>
+        </div>
+        <div id="over" class="overlay"> </div>
+    </div>
+    <script src="page2.js"></script>
+</body>
+
+</html>
