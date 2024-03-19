@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="page1.css">
+  <link rel="stylesheet" href="assets/CSS/page1.css">
 </head>
 <body>
   <div class="container">
@@ -24,24 +24,24 @@
     <a href="index.html" class="upper-left-link">Hogwarts</a>
   </div>
   <audio id="backgroundMusic" autoplay>
-    <source src="sounds/music.mp3" type="audio/mpeg">
+    <source src="assets/sounds/music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <img src="images/sound-icon.png" id="soundIcon" onclick="toggleMute()">
+  <img src="assets/images/sound-icon.png" id="soundIcon" onclick="toggleMute()">
   <audio id="clickSound">
-    <source src="sounds/clicksound.mp3" type="audio/mpeg">
+    <source src="assets/sounds/clicksound.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <script src="page1.js"></script>
+  <script src="assets/JS/page1.js"></script>
   <script>
     function toggleMute() {
       var audio = document.getElementById("backgroundMusic");
       if (audio.paused) {
         audio.play();
-        document.getElementById("soundIcon").src = "images/sound-icon.png";
+        document.getElementById("soundIcon").src = "assets/images/sound-icon.png";
       } else {
         audio.pause();
-        document.getElementById("soundIcon").src = "images/sound-muted.png";
+        document.getElementById("soundIcon").src = "assets/images/sound-muted.png";
       }
     }
     
