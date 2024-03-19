@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     videoContainer.classList.add('video-container');
     // Create the video element
     var video = document.createElement('video');
-    video.src = './video/entrance.mp4';
+    video.src = 'assets/video/entrance.mp4';
     video.autoplay = true;
     video.loop = false;
     // Add event listener for timeupdate event
