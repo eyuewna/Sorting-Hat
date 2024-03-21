@@ -332,22 +332,3 @@ button {
     font-size: 1em;
     color: #666; 
 }
-
-
-/* UPPER LINK "HOGWARTS" */
-.container {
-    position: relative; 
-}
-
-.upper-left-link {
-    position: absolute; 
-    top: 20px; 
-    left: 25px; 
-    font-family: "MyCustomFont"; 
-    font-size: 20px; 
-    color: #ffffff; 
-    text-decoration: none;
-}
-
-
-
