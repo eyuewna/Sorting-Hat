@@ -316,12 +316,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1px; /* Adjust margin as needed */
+    margin-top: 1px; 
 }
 
 .house-logo {
-    width: 300px; /* Adjust the width as needed */
-    margin: 1px; /* Adjust margin as needed */
+    width: 300px; 
+    margin: 1px; 
 }
 
 .house-info {
@@ -332,5 +332,18 @@ button {
     font-size: 1em;
     color: #666; 
 }
+
+
+/* upper link "HOGWARTS" */
+.upper-left-link {
+    position: absolute; 
+    top: 20px; 
+    left: 25px; 
+    font-family: "MyCustomFont"; 
+    font-size: 20px; 
+    color: #ffffff; 
+    text-decoration: none;
+}
+
 
 
