@@ -334,7 +334,11 @@ button {
 }
 
 
-/* upper link "HOGWARTS" */
+/* UPPER LINK "HOGWARTS" */
+.container {
+    position: relative; 
+}
+
 .upper-left-link {
     position: absolute; 
     top: 20px; 
