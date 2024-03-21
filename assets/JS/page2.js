@@ -55,3 +55,5 @@ function housetext() {
   };
 }
 
+document.getElementById('exitButton').addEventListener('click', function() {
+  window.location.href = 'page1.html';});
