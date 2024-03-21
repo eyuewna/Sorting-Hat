@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Sorting Hat</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/imageshaticon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/haticon.png"/>
     <link rel="stylesheet" href="assets/CSS/page2.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <a href="index.html" class="upper-left-link">Hogwarts</a>
     <div id="pg2" class="page2" class="buttonBox">
         <div id="eighth" class="buttonBox">
             <button class="house"><a>START</a></button>
@@ -24,10 +24,10 @@
                 <h1 class="housename"></h1>
                 <!-- Add house logos below -->
                 <div class="house-logos">
-                    <img id="Hufflepuff-logo" src="assets/imageshufflepuff-logo.png" alt="Hufflepuff Logo" class="house-logo">
-                    <img id="Gryffindor-logo" src="assets/imagesgryffindor-logo.png" alt="Gryffindor Logo" class="house-logo">
-                    <img id="Slytherin-logo" src="assets/imagesslytherin-logo.png" alt="Slytherin Logo" class="house-logo">
-                    <img id="Ravenclaw-logo" src="assets/imagesravenclaw-logo.png" alt="Ravenclaw Logo" class="house-logo">
+                    <img id="Hufflepuff-logo" src="assets/images/hufflepuff-logo.png" alt="Hufflepuff Logo" class="house-logo">
+                    <img id="Gryffindor-logo" src="assets/images/gryffindor-logo.png" alt="Gryffindor Logo" class="house-logo">
+                    <img id="Slytherin-logo" src="assets/images/slytherin-logo.png" alt="Slytherin Logo" class="house-logo">
+                    <img id="Ravenclaw-logo" src="assets/images/ravenclaw-logo.png" alt="Ravenclaw Logo" class="house-logo">
                 </div>
                 <!-- End of house logos -->
                 <h2 class="startagain" onClick="window.location.reload();">Start Again</h2>
@@ -78,7 +78,7 @@ function housetext() {
 
   audioafter.onended = function() {
     setTimeout(function() {
-      document.querySelector(".page2").style.backgroundImage = "url('assets/images" + houseName + ".jpg')";
+      document.querySelector(".page2").style.backgroundImage = "url('assets/images/" + houseName + ".jpg')";
       document.getElementById("eighth").remove();
       document.querySelector("#over").classList.remove("overlay");
       document.querySelector("#cont").classList.remove("container");
